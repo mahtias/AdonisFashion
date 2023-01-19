@@ -1,0 +1,83 @@
+/* 
+Auther : Gbamele N'Goran Alexandre
+
+Todo : styliser le fomulaire de connewion et d'inscription
+
+ */
+
+ *{
+    color: #000;
+    font-family: "Spartan", sans-serif;
+ }
+ /* .mt{
+    margin-top: 80px;
+ } */
+ input :hover{
+    color: aliceblue;
+    opacity: 1px;
+    visibility: hidden;
+ }
+ /* la bordure du form  */
+
+ form{
+    background-image: url("body.jpg");
+    background-size: cover;
+ }
+
+ .form-bord{
+    border: gray solid 2px;
+    border-radius: 15px;
+    background-color: #E3E6F3;
+   
+ }
+
+.form-bord:hover{
+    box-shadow :royalblue;
+    border: 6px royalblue;
+    
+}
+
+/* Button */
+.btn{
+    background-color: #088178;
+
+} 
+
+ ::placeholder{
+    color: red;
+ }
+
+
+/* Media query */
+ /* @media(max-width:477px){
+    form{
+        width: 150px;
+        margin-left: -68px;
+    }
+    label{
+        font-size: 15px;
+        
+    }
+    .mb-3 input{
+        width: 200px;
+        border: 10px;
+        margin-left: -25px;
+    }
+ } */
+
+ @media(max-width:1024px){
+    form{
+        width: 350px;
+        margin-left: -80px;
+    }
+   
+    .mb-3 input{
+        width: 260px;
+        border: 10px;
+        margin-left: -1px;
+    }
+    button{
+       
+        width: 100px !important;
+    }
+ }
