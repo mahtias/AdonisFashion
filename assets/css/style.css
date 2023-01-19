@@ -11,7 +11,7 @@ html {
 }
 
 body{
-  background-image: url('/assets/img/body.jpg');
+  background-image: url('./assets/img/body.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -142,7 +142,7 @@ body {
 /* section hero */
 
 #hero{
-  background-image: url("/assets/img/image.webp");
+  background-image: url("./assets/img/image.webp");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -169,7 +169,7 @@ body {
 }
 
 #hero button{
-  background-image: url(img/button.png);
+  background-image: url("img/button.png");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -324,7 +324,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: url("/assets/img/b2.jpg");
+  background-image: url(/b2.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -364,7 +364,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  background-image: url("/assets/img/promotion/1.webp");
+  background-image: url("./assets/img/promotion/1.webp");
   width: 550px;
   height: 50vh;
   background-size: cover;
@@ -373,7 +373,7 @@ body {
 }
 
 #sm-banner .banner-box2{
-  background-image: url("/assets/img/promotion/2.webp");
+  background-image: url("./assets/img/promotion/2.webp");
 }
 
 #sm-banner h4{
@@ -415,7 +415,7 @@ font-weight: 300;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  background-image: url("/assets/img/promotion/1.jpg");
+  background-image: url("./assets/img/promotion/1.jpg");
   width: 30%;
   height: 30vh;
   background-size: cover;
@@ -425,11 +425,11 @@ font-weight: 300;
 }
 
 #banner3 .banner-box2{
-  background-image: url("/assets/img/promotion/2.jpg");
+  background-image: url("./assets/img/promotion/2.jpg");
 }
 
 #banner3 .banner-box3{
-  background-image: url("/assets/img/promotion/3.jpg");
+  background-image: url("./assets/img/promotion/3.jpg");
 }
 
 
