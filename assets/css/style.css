@@ -11,7 +11,7 @@ html {
 }
 
 body{
-  
+  background-image: url(./assets/img/body.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
