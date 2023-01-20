@@ -1,682 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping fashion</title>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping fashion</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-  <body>
-    <section id="header">
-      <a href="#"><img src="assets/img/logo.png" class="logo" alt="" /></a>
-      <div>
-        <ul id="navbar">
-          <li><a  href="index.html">Accueil</a></li>
-          <li><a class="active" href="produit.html">Boutique</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a id="lg-bag" href="cart.html"
-              ><i class="fa fa-shopping-bag"></i
-            ></a>
-          </li>
-          <a href="#" id="close"><i class="far fa-times"></i></a>
-        </ul>
-      </div>
-      <div id="mobile">
-        <a href="cart.html"><i class="far fa-shopping-bar"></i></a>
-        <i id="bar" class="fas fa-outdent"></i>
-      </div>
-    </section>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-    <section id="product1" class="section-p1">
-      <h2>Votre Boutique</h2>
-      <p>collection d'été nouveau design morden</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="./assets/img/populaire/30.avif" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Pantalon & chemise</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
+<body>
+  <section id="header">
+    <a href="#"><img src="assets/img/logo.png" class="logo" alt="" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active" href="produit.html">Boutique</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <i class="fa fa-shopping-bag" id="toggle-cart-btn"></i>
+
+          <!-- debut element du pannier -->
+          <div id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
           </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
+          <!-- fin element du pannier -->
+        </li>
+        <a href="#" id="close"><i class="far fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="far fa-shopping-bar"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
 
-        <div class="pro">
-          <img src="./assets/img/populaire/31.jpg" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Pantalon & chemise</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
+  <section id="product1" class="section-p1">
+    <h2>Votre Boutique</h2>
+    <p>collection d'été nouveau design morden</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="./assets/img/populaire/30.avif" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Pantalon & chemise</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
+          <h4>15.000fr</h4>
         </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/3.jpg" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Robe-Dame</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/4.jpg" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Robe</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/5.webp" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Robe sans manche</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/2.webp" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Robe longue</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/3.webp" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Robe Longue </h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/6.webp" alt="" />
-          <div class="des">
-            <span>Afrique du sud</span>
-            <h5>Robe asymétrique</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="1"></i></a>
       </div>
 
-      <!--  -->
-
-      <div class="pro-container">
-        <div class="pro">
-          <img src="./assets/img/populaire/5.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Chemisse</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
+      <div class="pro">
+        <img src="./assets/img/populaire/31.jpg" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Pantalon & chemise</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
+          <h4>15.000fr</h4>
         </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/6.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe pull</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/7.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe pull</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/8.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Boubou-Masques</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/9.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/10.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe trapèze</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/11.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Senoufo-Enfant</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/12.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="2"></i></a>
       </div>
 
-      <div class="pro-container">
-        <div class="pro">
-          <img src="./assets/img/populaire/13.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Dame-Senoufo</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
+      <div class="pro">
+        <img src="./assets/img/populaire/3.jpg" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Robe-Dame</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
+          <h4>15.000fr</h4>
         </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/14.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Dame-Senoufo</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/15.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe Senoufo </h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/17.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Complet pour Enfant</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/18.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Complet pour Enfan</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/20.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Complet pour enfant</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/21.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Complet pour enfant</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/19.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Complet pour enfant</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="3"></i></a>
       </div>
 
-      <div class="pro-container">
-        <div class="pro">
-          <img src="./assets/img/populaire/22.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Kita pour enfant</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
+      <div class="pro">
+        <img src="./assets/img/populaire/4.jpg" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Robe</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
+          <h4>15.000fr</h4>
         </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/23.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Robe kita</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/24.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Complet kita</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/25.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Kita-Dame</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/26.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Kita-Dame</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/27.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Pantalon & chemise</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/29.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Pantalon & chemise</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
-
-        <div class="pro">
-          <img src="./assets/img/populaire/28.jpg" alt="" />
-          <div class="des">
-            <span>Côte d'Ivoire</span>
-            <h5>Pantalon & chemise</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>15.000fr</h4>
-          </div>
-          <a href="#"
-            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
-          ></a>
-        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="4"></i></a>
       </div>
-    </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
-        <h4>Inscrivez-vous aux pour les nouvelles collectios</h4>
-        <p>
-          Recevez des mises à jour par e-mail sur notre dernière boutique et
-          <span>nos offres spéciales</span>
-        </p>
+      <div class="pro">
+        <img src="./assets/img/populaire/5.webp" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Robe sans manche</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="5"></i></a>
       </div>
-      <div class="form">
-        <input type="text" placeholder=" Entrer votre adresse mail" />
-        <button class="normal">S'inscrire</button>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/2.webp" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Robe longue</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="6"></i></a>
       </div>
-      <div class="icon">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-pinterest-p"></i>
-        <i class="fab fa-youtube"></i>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/3.webp" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Robe Longue </h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="7"></i></a>
       </div>
-      <img src="img/pay/pay.png" alt="" />
-    </section>
-  </body>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/6.webp" alt="" />
+        <div class="des">
+          <span>Afrique du sud</span>
+          <h5>Robe asymétrique</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="8"></i></a>
+      </div>
+   
+      <div class="pro">
+        <img src="./assets/img/populaire/5.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Chemisse</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="9"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/6.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe pull</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="10"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/7.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe pull</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="11"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/8.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Boubou-Masques</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="12"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/9.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="13"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/10.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe trapèze</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="14"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/11.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Senoufo-Enfant</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="15"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/12.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="16"></i></a>
+      </div>
+    </div>
+
+    <div class="pro-container" id="productContainer">
+      <div class="pro">
+        <img src="./assets/img/populaire/13.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Dame-Senoufo</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="17"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/14.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Dame-Senoufo</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="18"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/15.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe Senoufo </h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="19"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/17.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Complet pour Enfant</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="20"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/18.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Complet pour Enfan</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="21"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/20.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Complet pour enfant</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="22"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/21.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Complet pour enfant</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="23"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/19.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Complet pour enfant</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="24"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/22.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Kita pour enfant</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="25"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/23.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Robe kita</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="26"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/24.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Complet kita</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="27"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/25.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Kita-Dame</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="28"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/26.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Kita-Dame</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="29"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/27.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Pantalon & chemise</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="30"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/29.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Pantalon & chemise</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="31"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="./assets/img/populaire/28.jpg" alt="" />
+        <div class="des">
+          <span>Côte d'Ivoire</span>
+          <h5>Pantalon & chemise</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>15.000fr</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="32"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Inscrivez-vous aux pour les nouvelles collectios</h4>
+      <p>
+        Recevez des mises à jour par e-mail sur notre dernière boutique et
+        <span>nos offres spéciales</span>
+      </p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder=" Entrer votre adresse mail" />
+      <button class="normal">S'inscrire</button>
+    </div>
+    <div class="icon">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-pinterest-p"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <img src="img/pay/pay.png" alt="" />
+  </section>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
