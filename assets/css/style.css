@@ -23,7 +23,6 @@ h1 {
   line-height: 64px;
   color: #222;
 }
-
 h2 {
   font-size: 46px;
   line-height: 54px;
@@ -90,7 +89,7 @@ body {
   right: 0;
   padding: 1em;
   background-color: #fff;
-  z-index: 2;
+  z-index: 9999;
   transform: scale(0);
   transform: translatey(-10px);
   opacity: 0;
