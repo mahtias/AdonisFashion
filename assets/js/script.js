@@ -61,7 +61,7 @@
     }
   }
 
-// afficher la liste des articles dans le pannier 
+  // afficher la liste des articles dans le pannier
   function displayProducts() {
     // recuperer les articles du local storage
     const lsContent = getLSContent();
@@ -70,9 +70,7 @@
       for (let product of lsContent) {
         productMarkup += `
           <tr>
-          <td><img class="cart-image" src="${product.image}" alt="${
-          product.name
-        }" width="120"></td>
+          <td><img class="cart-image" src="${product.image}" alt="${product.name}" width="120"></td>
           <td>
             ${product.name}
           </td>
@@ -87,25 +85,20 @@
     cartContent.querySelector("tbody").innerHTML = productMarkup;
   }
 
-
-
-// sauvegarder l'arcticle choisie par l'utilisateur dans le local Storage 
+  // sauvegarder l'arcticle choisie par l'utilisateur dans le local Storage
   function saveProduct(clickedBtn) {
     const productId = clickedBtn.getAttribute("data-id");
     const card = clickedBtn.parentElement.parentElement;
     const cardInfo = clickedBtn.parentElement;
     const prodImage = card.querySelector("img").src;
-    const prodName = cardInfo.querySelector("h4").textContent;
-    const prodPrice = cardInfo.querySelector(".card__price").textContent;
+    const prodName = cardInfo.querySelector("h5").textContent;
+    const prodPrice = cardInfo.querySelector("h4").textContent;
 
     let isProductInCart = false;
 
-    // get local storage array
     const lsContent = getLSContent();
 
-    // to avoid user adds the same course twice, check
-    // the product is not in LS already before adding it
-    lsContent.forEach(function(product) {
+    lsContent.forEach(function (product) {
       if (product.id === productId) {
         alert("This course is already in your cart.");
         isProductInCart = true;
@@ -113,20 +106,97 @@
     });
 
     if (!isProductInCart) {
-        lsContent.push({
-          id: productId,
-          image: prodImage,
-          name: prodName,
-          price: prodPrice
-        });
-  
-        // add product into into local storage
-        setLSContent(lsContent);
-        // update the display of courses in the shopping cart
-        displayProducts();
-      }
+      lsContent.push({
+        id: productId,
+        image: prodImage,
+        name: prodName,
+        price: prodPrice,
+      });
+
+      setLSContent(lsContent);
+      displayProducts();
     }
+  }
+
+  // retirer le product dans le local storage
+
+  function removeProduct(productId) {
+    const lsContent = getLSContent();
+    let productIndex;
+    lsContent.forEach(function (product, i) {
+      if (product.id === productId) {
+        productIndex = i;
+      }
+    });
+    lsContent.splice(productIndex, 1);
+    setLSContent(lsContent);
+    displayProducts();
+  }
+
+  //   effacer la liste des articles
+  function clearCart() {
+    const lsContent = getLSContent();
+    lsContent.splice(0, lsContent.length);
+    setLSContent(lsContent);
+    displayProducts();
+  }
+
+  //   function checkout() {
+  //     // checkout: just clear the cart
+  //     // after user confirms the checkout process
+  //     const cartProducts = cartContent.querySelector("tbody").innerHTML;
+  //     if (cartProducts !== "" && confirm("Are you sure you want to checkout?")) {
+  //       clearCart();
+  //     } else {
+  //       return;
+  //     }
+  //   }
+
+  document.addEventListener("DOMContentLoaded", function (e) {
+    displayProducts();
+    displayCartTotal();
+  });
+
+  toggleCartBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    toggleCart();
+  });
+
+  productsContainer.addEventListener("click", function(e) {
+    if (e.target.classList.contains("add-to-cart")) {
+      e.preventDefault();
+      const clickedBtn = e.target;
+      saveProduct(clickedBtn);
+    }
+  });
+
+  productsContainer.addEventListener("click", function(e) {
+    if (e.target.classList.contains("add-to-cart")) {
+      displayCartTotal();
+    }
+  });
+
+  cartContent.querySelector("tbody").addEventListener("click", function(e) {
+    e.preventDefault();
+    const clickedBtn = e.target;
+    if (e.target.classList.contains("remove")) {
+      const productId = clickedBtn.getAttribute("data-id");
+      removeProduct(productId);
+      displayCartTotal();
+    }
+  });
+
+  clearCartBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    clearCart();
+  });
+  clearCartBtn.addEventListener("click", displayCartTotal);
 
 
+  checkoutBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    checkout();
+  });
+  checkoutBtn.addEventListener("click", displayCartTotal);
 
-});
+})();
