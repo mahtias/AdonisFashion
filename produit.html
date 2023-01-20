@@ -19,28 +19,35 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a class="active" href="produit.html">Boutique</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li>
-          <a id="toggle-cart-btn"><i class="fa fa-shopping-bag"></i></a>
-
-          <!-- debut element du pannier -->
-          <div id="shopping-cart" class="shopping-cart-container">
-            <table id="cart-content">
-              <thead>
-                <tr>
-                  <th>Image</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-            <p class="total-container" id="total-price"></p>
-            <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
-            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
-          </div>
-          <!-- fin element du pannier -->
-        </li>
+        <div class="header__cart">
+          <li class="header__submenu" id="submenu">
+            <!-- <a id="toggle-cart-btn"><i class="fa fa-shopping-bag"></i></a> -->
+            <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path
+                  d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z">
+                </path>
+              </svg></button>
+            <!-- debut element du pannier -->
+            <div id="shopping-cart" class="shopping-cart-container">
+              <table id="cart-content">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                   
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <p class="total-container" id="total-price"></p>
+              <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+              <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+            </div>
+            <!-- fin element du pannier -->
+          </li>
+        </div>
         <a href="#" id="close"><i class="far fa-times"></i></a>
       </ul>
     </div>
@@ -68,7 +75,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="1"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="1"></i></a>
       </div>
 
       <div class="pro">
@@ -85,7 +92,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="2"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="2"></i></a>
       </div>
 
       <div class="pro">
@@ -102,7 +109,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="3"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="3"></i></a>
       </div>
 
       <div class="pro">
@@ -119,7 +126,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="4"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="4"></i></a>
       </div>
 
       <div class="pro">
@@ -136,7 +143,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="5"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="5"></i></a>
       </div>
 
       <div class="pro">
@@ -153,7 +160,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="6"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="6"></i></a>
       </div>
 
       <div class="pro">
@@ -170,7 +177,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="7"></i></a>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="7"></i></a>
       </div>
 
       <div class="pro">
@@ -187,9 +194,9 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="8"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="8"></i>
       </div>
-   
+
       <div class="pro">
         <img src="./assets/img/populaire/5.jpg" alt="" />
         <div class="des">
@@ -204,7 +211,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="9"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="9"></i>
       </div>
 
       <div class="pro">
@@ -221,7 +228,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="10"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="10"></i>
       </div>
 
       <div class="pro">
@@ -238,7 +245,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="11"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="11"></i>
       </div>
 
       <div class="pro">
@@ -255,7 +262,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="12"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="12"></i>
       </div>
 
       <div class="pro">
@@ -272,7 +279,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-       <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="13"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="13"></i>
       </div>
 
       <div class="pro">
@@ -289,7 +296,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="14"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="14"></i>
       </div>
 
       <div class="pro">
@@ -306,7 +313,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="15"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="15"></i>
       </div>
 
       <div class="pro">
@@ -323,7 +330,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="16"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="16"></i>
       </div>
     </div>
 
@@ -342,7 +349,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="17"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="17"></i>
       </div>
 
       <div class="pro">
@@ -359,7 +366,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="18"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="18"></i>
       </div>
 
       <div class="pro">
@@ -376,7 +383,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-       <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="19"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="19"></i>
       </div>
 
       <div class="pro">
@@ -393,7 +400,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="20"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="20"></i>
       </div>
 
       <div class="pro">
@@ -410,7 +417,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-      <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="21"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="21"></i>
       </div>
 
       <div class="pro">
@@ -427,7 +434,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-      <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="22"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="22"></i>
       </div>
 
       <div class="pro">
@@ -444,7 +451,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-     <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="23"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="23"></i>
       </div>
 
       <div class="pro">
@@ -461,7 +468,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-  <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="24"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="24"></i>
       </div>
 
       <div class="pro">
@@ -478,7 +485,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="25"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="25"></i>
       </div>
 
       <div class="pro">
@@ -495,7 +502,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="26"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="26"></i>
       </div>
 
       <div class="pro">
@@ -512,7 +519,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="27"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="27"></i>
       </div>
 
       <div class="pro">
@@ -529,7 +536,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="28"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="28"></i>
       </div>
 
       <div class="pro">
@@ -546,7 +553,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="29"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="29"></i>
       </div>
 
       <div class="pro">
@@ -563,7 +570,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="30"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="30"></i>
       </div>
 
       <div class="pro">
@@ -580,7 +587,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="31"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="31"></i>
       </div>
 
       <div class="pro">
@@ -597,7 +604,7 @@
           </div>
           <h4>15.000fr</h4>
         </div>
-        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id ="32"></i>
+        <i class="fa fa-shopping-cart cart" aria-hidden="true" data-id="32"></i>
       </div>
     </div>
   </section>

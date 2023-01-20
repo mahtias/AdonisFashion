@@ -2,15 +2,22 @@
   let productContainer = document.querySelector("#productContainer");
   let cartContainer = document.querySelector("#shopping-cart");
   let cartContent = document.querySelector("#cart-content");
-  let toggleCartBtn = document.querySelector("#toggle-cart-btn");
+  let toggleCartBtn = document.getElementById('toggle-cart-btn');
   let clearCartBtn = document.querySelector("#clear-cart");
   let checkoutBtn = document.querySelector("#checkout-btn");
   let totalPriceContainer = document.querySelector("#total-price");
+  let closebtn = document.getElementsByClassName("close");
 
   // Afficher le pannier
   function toggleCart() {
-    cartContainer.classList.toggle("open");
+    // cartContainer.addClassList("open");
+   if( cartContainer.style.opacity=="0"){
+    cartContainer.style.opacity="1"
+   }else{
+    cartContainer.style.opacity="0"
+   }
   }
+
 
   // recuperer le contenu du local storage, si il est vide creer un tableau vide
   function getLSContent() {
@@ -162,7 +169,12 @@
     toggleCart();
   });
 
-  productsContainer.addEventListener("click", function(e) {
+  closebtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    close();
+  });
+
+  productContainer.addEventListener("click", function(e) {
     if (e.target.classList.contains("add-to-cart")) {
       e.preventDefault();
       const clickedBtn = e.target;
@@ -170,7 +182,7 @@
     }
   });
 
-  productsContainer.addEventListener("click", function(e) {
+  productContainer.addEventListener("click", function(e) {
     if (e.target.classList.contains("add-to-cart")) {
       displayCartTotal();
     }
